@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -46,3 +47,6 @@ Route::get("/home", function () {
 Route::get("/about", function () {
     return "about";
 })->name("about");
+
+
+Route::get("/dashboard", [DashboardController::class, "index"])->name("dashboard");
