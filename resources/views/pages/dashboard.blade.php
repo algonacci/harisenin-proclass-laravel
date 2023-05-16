@@ -104,12 +104,12 @@
                         <tbody>
                             @foreach ($tables as $data)
                                 <tr>
-                                    <td>{{ $data['Name'] }}</td>
-                                    <td>{{ $data['Position'] }}</td>
-                                    <td>{{ $data['Office'] }}</td>
-                                    <td>{{ $data['Age'] }}</td>
-                                    <td>{{ $data['Start_date'] }}</td>
-                                    <td>{{ $data['Salary'] }}</td>
+                                    <td>{{ $data['name'] }}</td>
+                                    <td>{{ $data['position'] }}</td>
+                                    <td>{{ $data['office'] }}</td>
+                                    <td>{{ $data['age'] }}</td>
+                                    <td>{{ $data['start_date'] }}</td>
+                                    <td>{{ $data['salary'] }}</td>
                                 </tr>
                             @endforeach
                         </tbody>
