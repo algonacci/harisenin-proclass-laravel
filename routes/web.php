@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -50,3 +51,6 @@ Route::get("/about", function () {
 
 
 Route::get("/dashboard", [DashboardController::class, "index"])->name("dashboard");
+
+Route::get("/contact", [ContactController::class, "show"]);
+Route::post("/contact", [ContactController::class, "store"])->name("contact.store");
