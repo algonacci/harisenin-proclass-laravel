@@ -39,6 +39,6 @@ Route::post("/register", [AuthController::class, "store"]);
 Route::post("/login", [AuthController::class, "authenticate"]);
 Route::get("/logout", [AuthController::class, "logout"]);
 
-Route::get("/product", [ProductController::class, "index"]);
+Route::resource("/product", ProductController::class);
 
 // require __DIR__.'/auth.php';
