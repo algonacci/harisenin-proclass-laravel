@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -37,5 +38,7 @@ Route::get("/dashboard", [DashboardController::class, "index"])->middleware("aut
 Route::post("/register", [AuthController::class, "store"]);
 Route::post("/login", [AuthController::class, "authenticate"]);
 Route::get("/logout", [AuthController::class, "logout"]);
+
+Route::get("/product", [ProductController::class, "index"]);
 
 // require __DIR__.'/auth.php';
